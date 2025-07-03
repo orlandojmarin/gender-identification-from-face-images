@@ -63,7 +63,7 @@ Performance was evaluated using the following metrics:
 
 ## Results Summary
 
-The best-performing model was the Artificial Neural Network (ANN), followed closely by Random Forest. Full metric results are summarized below:
+The best-performing model was Random Forest, followed closely by Artificial Neural Network. Full metric results are summarized below:
 
 - **Random Forest**: Accuracy = 77.27%, Precision = 76.00%, Recall = 89.06%, AUC = 0.7362
 - **ANN**: Accuracy = 76.36%, Precision = 75.68%, Recall = 87.50%, AUC = 0.7741
@@ -74,11 +74,11 @@ The best-performing model was the Artificial Neural Network (ANN), followed clos
 
 ## Conclusion
 
-This study shows that gender classification can be effectively performed using engineered geometric features derived from facial landmarks. The Artificial Neural Network and Random Forest classifiers produced the strongest results, demonstrating their ability to model complex patterns in facial structure. KNN, Naive Bayes, and SVM also performed well, especially in terms of recall. The person-wise data split and careful feature selection contributed to the consistent performance across models.
+This study shows that gender classification can be effectively performed using engineered geometric features derived from facial landmarks. The Random Forest and Artificial Neural Network classifiers produced the strongest results, demonstrating their ability to model complex patterns in facial structure. KNN, Naive Bayes, and SVM also performed well, especially in terms of recall. The person-wise data split and careful feature selection contributed to the consistent performance across models.
 
 ## Limitations
 
-The dataset contains a moderate class imbalance, with more male images than female. Although our person-wise and gender-balanced splitting mitigated this issue, it may still influence model outcomes. Additionally, the landmark data includes only 22 points per face, which limits facial detail. The lack of demographic metadata such as age or ethnicity further reduces the model's ability to generalize.
+The dataset contains a moderate class imbalance, with more male images than female. Although our person-wise and gender-balanced splitting ensured that there was no data leakage, it may still influence model outcomes. Additionally, the landmark data includes only 22 points per face, which limits facial detail. The lack of demographic metadata such as age or ethnicity further reduces the model's ability to generalize.
 
 ## Future Work
 
