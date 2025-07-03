@@ -48,7 +48,7 @@ Six classifiers were tested:
 - **Random Forest**: Optimal with 30 estimators and max depth of 15.
 - **Artificial Neural Network (ANN)**: Best configuration included one hidden layer of 100 neurons, learning rate = 0.01, and tolerance = 0.01.
 - **Naive Bayes**: Used Gaussian Naive Bayes without tuning.
-- **Decision Tree**: Tuned using grid search with class weighting.
+- **Decision Tree**: Optimal with max_depth = 8, min_samples_split = 2, min_samples_leaf = 5.
 - **Support Vector Machine (SVM)**: Best results with RBF kernel and C = 1.
 
 ## Evaluation Metrics
@@ -65,12 +65,12 @@ Performance was evaluated using the following metrics:
 
 The best-performing model was the Artificial Neural Network (ANN), followed closely by Random Forest. Full metric results are summarized below:
 
-- **ANN**: Accuracy = 76.36%, Precision = 75.68%, Recall = 87.50%, AUC = 0.7741
 - **Random Forest**: Accuracy = 77.27%, Precision = 76.00%, Recall = 89.06%, AUC = 0.7362
-- **KNN**: Accuracy = 71.82%, Precision = 73.24%, Recall = 81.25%, AUC = 0.7215
+- **ANN**: Accuracy = 76.36%, Precision = 75.68%, Recall = 87.50%, AUC = 0.7741
 - **Naive Bayes**: Accuracy = 72.73%, Precision = 75.00%, Recall = 79.69%, AUC = 0.7738
-- **SVM**: Accuracy = 71.00%, Precision = 70.00%, Recall = 89.00%, AUC = 0.7446
-- **Decision Tree**: Accuracy = 64.00%, Precision = 68.00%, Recall = 72.00%, AUC = 0.6929
+- **KNN**: Accuracy = 71.82%, Precision = 73.24%, Recall = 81.25%, AUC = 0.7215
+- **SVM**: Accuracy = 70.91%, Precision = 69.51%, Recall = 89.06%, AUC = 0.7446
+- **Decision Tree**: Accuracy = 63.64%, Precision = 67.65%, Recall = 71.88%, AUC = 0.6929
 
 ## Conclusion
 
@@ -82,7 +82,7 @@ The dataset contains a moderate class imbalance, with more male images than fema
 
 ## Future Work
 
-Future improvements may include expanding the dataset to achieve better gender balance and incorporating more facial landmarks to increase detail. Additional features such as facial symmetry and angles could enhance prediction accuracy. Including metadata such as age or ethnicity may also improve model performance and fairness in real-world applications.
+Future improvements may include expanding the dataset to achieve better gender balance and incorporating more facial landmarks to increase detail. Additional features such as facial symmetry and angles could enhance prediction accuracy. Including metadata such as age group or skin tone may also improve model performance and fairness in real-world applications.
 
 ## How to Run
 
